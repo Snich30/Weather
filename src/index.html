@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css">
+  <title>MeteorMate</title>
+</head>
+<body>
+    <div class="container">
+        <header class="weather-header margin-bottom-40px">
+          <div class="weather-logo">
+            <img class="weather-logo__main-icon" src="img/Main-logo.png" alt="">
+            <h2 class="title-secondary"><span class="span-logo">Meteor</span>Mate</h2>
+          </div>
+          <form class="search-box">
+              <input type="text" placeholder="Search for a city..." class="search-boxform">
+              <i class="search-box__icon bx bx-search"></i>
+          </form> 
+          <div class="weather-units">
+              <span class="margin-right-5px weather_unit_celsius">&#176C</span>
+              <span class="weather_unit_farenheit">&#176F</span>
+          </div>
+        </header>
+        <div class="column">
+            <section class="main-section margin-bottom-20px margin-right-15px">
+                <h2 class="title-secondary weather__city margin-bottom-10px"></h2>
+                <p class="paragraph weather-now">Now</p>
+                
+                <div class="weather-box-info">
+                    <p class="weather-temperature"></p>
+                    <div class="weather-icon"></div>
+                </div>
+                <div class="weather-forecast margin-bottom-10px"></div>
+
+                <hr class="border-line margin-bottom-10px">
+
+                <div class="info-box-day margin-bottom-10px">
+                    <i class="bx bx-calendar-week"></i>
+                    <div class="datetime-in-city"></div>
+                </div>
+                <div class="weather-temperature__minmax">
+                    <p>Min: 12&#176</p>
+                    <p>Max: 16&#176</p>
+                </div>
+            </section>
+            <section class="section-forecast">
+                <div class="forecast-column">
+                    <div class="forecast-card">
+                        <p class="forecast-card__name">Real Feel</p>
+                        <div class="forecast-card__info">
+                            <i class="forecast-card__icon bx bxs-thermometer"></i>
+                            <div>
+                                <p class="weather__realfeel size-info">18&#176</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forecast-card ">
+                        <p class="forecast-card__name">Wind</p>
+                        <div class="forecast-card__info">
+                            <i class="forecast-card__icon bx bx-wind"></i>
+                            <div>
+                                <p class="weather__wind size-info">18&#176</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="forecast-column">
+                    <div class="forecast-card">
+                        <p class="forecast-card__name">Humidity</p>
+                        <div class="forecast-card__info">
+                            <i class="forecast-card__icon bx bx-water"></i>
+                            <div>
+                                <p class="weather__humidity size-info">18&#176</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forecast-card">
+                        <p class="forecast-card__name">Pressure</p>
+                        <div class="forecast-card__info">
+                            <i class="forecast-card__icon bx bx-tachometer"></i>
+                            <div>
+                                <p class="weather__pressure size-info">18&#176</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>  
+        </div>
+        <section class="section-days-forecast">
+            <div class="forecast-card-day">
+                <div class="forecast-column">
+                    <div class="forecast-day"></div>
+                    
+                    <div class="forecast-icon"></div>
+                </div>
+                    <div class="forecast-temperature"></div>
+            </div>
+        </section>
+        
+    </div>
+    <script src="https://kit.fontawesome.com/a692e1c39f.js" crossorigin="anonymous"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
